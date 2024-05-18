@@ -1,0 +1,602 @@
+
+*,
+*::before,
+*::after {
+    /*Fondos para las secciones principal, skills, hobbies y experiencia*/
+    --color-principal: #cecaca;
+    /*Fondos para las otras secciones sobre mí, formación y contacto*/
+    --color-secundario: #e6e1e1;
+    /*Fondo para el footer*/
+    --footer-azul-oscuro: #102C57;
+    /*Fondo para los botones repo, demo y enviar*/
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 15px;
+    color: black;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Diseño del menú */
+.menu__list {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 40px;
+    background: #102C57;
+    padding: 30px;
+}
+
+
+.menu__list__item {
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    align-self: center;
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.enlacel{
+    color: aliceblue;
+}
+
+.enlacel:hover{
+    color: #3F517C;
+}
+
+
+
+/*Diseño de los titulos y de la imagen de perfil*/
+
+.title__div {
+    width: 70%;
+    display: inline-flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.title__profile {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 50px;
+    padding: 10px;
+
+}
+
+
+/*Diseño de la sección principal la parte de los titulos*/
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.title__bio {
+    font-weight: bold;
+    font-size: 35px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.title__subsection {
+    font-size: 24px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/*Formato a la lista de las redes sociales*/
+
+.title__network {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+}
+
+.title__network__item {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin: 15px;
+
+}
+
+.title__network__item img {
+    width: 50px;
+    margin: auto;
+}
+
+.title__network__item .title__network__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Diseño de la sección Sobre mí*/
+
+/*sction: about-me*/
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: linear-gradient(to bottom, white, #e6e1e1);
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.about__container {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+
+.about__paragraph {
+    display: flex;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 10px;
+    text-align: justify;
+}
+
+/* Diseño de la sección Skills y de Hobbies*/
+
+/*section skills*/
+.skills {
+    display: flex;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #e6e1e1, #cecaca);
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Estilos a los titulos de skills, hobbies,formación académica, experiencia*/
+.about__title,
+.skills__title,
+.hobbies__title,
+.academic__title,
+.experience__section__title,
+.formcontato__title {
+    font-weight: bold;
+    text-align: center;
+    font-style: oblique;
+    font-size: 25px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-decoration: underline;
+}
+
+.skills__line {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.skills__box {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0px 30px 0px 1px;
+    margin: 10px;
+    border-radius: 15px;
+    flex: 1;
+    align-self: center;
+   }
+
+.skills__box:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.skillsv{
+    list-style-type: none;
+    
+}
+
+.skills__img img{
+    width: 100px;
+    height: auto;  
+}
+
+
+/*Estilos a las li de skills, hobbies */
+.skills__name,
+.hobbies__name {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+
+/*Hobbies */
+
+.hobbies {
+    display: flex;
+    padding: 20px;
+    background: var(--color-principal);
+    align-items: center;
+    flex-direction: column;
+}
+
+.hobbies__line {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.hobbies__box {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0px 30px 0px 1px;
+    margin: 10px;
+    border-radius: 15px;
+    flex: 1;
+    align-self: center;
+}
+
+.hobbies__box:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.hobbies__img img {
+    width: 65px;
+    height: auto;
+    flex: none;
+}
+
+
+/*Estilos para la sección de Formaciones académicas*/
+
+.academic {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    background-image: linear-gradient(to bottom,#cecaca, #e6e1e1);
+    align-items: center;
+    flex-direction: column;
+}
+
+.academic__courses {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+.academic__courses__list{
+    list-style-type: none;
+}
+.academic__courses__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px 0px 1px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: white;
+    flex: 1;
+}
+
+.academic__courses__box:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+
+.academic__courses__item__img img {
+    width: 110px;
+    height: 110px;
+    flex: none;
+    margin-top: 10px;
+}
+
+.academic__courses__item__title {
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.2;
+    margin-top: 15px;
+}
+
+.academic__courses__item__subtitle {
+    display: flex;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+/*Experiencia*/
+
+.experience {
+    display: flex;
+    padding: 20px;
+    background-image: linear-gradient(to bottom,#e6e1e1, white);
+    align-items: center;
+    flex-direction: column
+}
+
+.experiencie__box {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.experience__img {
+    width: 35%;
+    height: auto;
+    margin: 15px;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+
+/*Estilo para el juego número secreto*/
+
+.experience-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    order: -1;
+}
+
+/*Estilos de los titulos de la section experiencia*/
+
+.experience__title {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.experience__text {
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/*Estilo para los botones*/
+
+.experience__description {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+
+}
+
+/*Botones repositorio y demo*/
+
+.experiencia__botao--repo {
+    height: 50px;
+    width: 110px;
+    background-color: #102C57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+    margin-right: 15px;
+}
+
+
+.experiencia__botao--repo:hover {
+    transform: translateY(-5px) scale(1.0);
+}
+
+.experiencia__botao--repo:active {
+    background-color: #102C57;
+}
+
+.experience__botao--demo {
+    height: 50px;
+    width: 110px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+
+.experience__botao--demo:hover {
+    transform: translateY(-5px) scale(1.0);
+}
+
+.experience__botao--demo:active {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/*Diseño de la section contact*/
+
+.formcontato {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formcontato__contacto {
+    width: 50%;
+    display: flex;
+    
+    margin-top: 30px;
+} 
+
+.formcontato--esquerda {
+    width: 150px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+       
+}
+
+.formcontato__subtext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.formcontato__img  {
+    width: 150px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+}
+
+#w.formcontato__w {
+    width: 75px;
+    display: flex;
+    padding: 0px 25px 0px 0px;
+    align-self:center;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.contact-subtitle {
+    display: flex;
+    font-size: 19px;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    line-height: normal;
+}
+
+/*Diseño del formulario de contacto*/
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    margin: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+    
+}
+
+/*Estilos para el botón de enviar mensaje*/
+
+.formcontato__botao {
+    height: 60px;
+    width: 120px;
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #102C57;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+
+.formcontato__botao:hover {
+    transform: translateY(-5px) scale(1.0);
+}
+
+/*Diseño del footer*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    background-color: var(--footer-azul-oscuro);
+}
+
+.footer__rodape {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.1;
+    color: white;
+}
